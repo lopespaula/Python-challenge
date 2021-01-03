@@ -1,38 +1,23 @@
 # Python-challenge
 
-mport csv
+PyBank
 
-budged_data_csv = "/Users/paulalopes/Desktop/Boot Camp/Python/Python-challenge/PyBank/Resources/pybank_challenge.cvs (1).csv"
-
-months = []
-
-i = 2
-
-sum = 0
-
-lista = []
+In this challenge, you are tasked with creating a Python script for analyzing the financial records of your company. You will give a set of financial data called budget_data.csv. The dataset is composed of two columns: Date and Profit/Losses. (Thankfully, your company has rather lax standards for accounting so the records are simple.)
 
 
+Your task is to create a Python script that analyzes the records to calculate each of the following:
 
 
-#Open and read csv
-with open(budged_data_csv) as csv_file:
-    csv_reader = csv.reader(csv_file, delimiter=",")
-
-    # Read the header row first
-    csv_header = next(csv_file)
-    print(f"Header: {csv_header}")
-    
-    #Read through each row of data after the header
-    for row in csv_file:
-       months.append(row[0])
-        total_months = len(months)
-       
-
-    print(total_months)
+- The total number of months included in the dataset
 
 
+- The net total amount of "Profit/Losses" over the entire period
 
-for i in (n,2):
-    sum = sum + arq[i]
-lista.append(sum)
+
+- Calculate the changes in "Profit/Losses" over the entire period, then find the average of those changes
+
+
+- The greatest increase in profits (date and amount) over the entire period
+
+
+- The greatest decrease in losses (date and amount) over the entire period
